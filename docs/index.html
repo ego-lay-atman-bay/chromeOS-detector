@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SMM v.6 Blocks id Table</title>
+    </head>
+    <body>
+        <p id="detector">detecting...</p>
+        <script>
+            if (/\bCrOS\b/.test(navigator.userAgent)) {
+                document.getElementById("detector").innerHTML = "on ChromeOS"
+            } else {
+            document.getElementById("detector").innerHTML = "not on ChromeOS"
+            }
+        </script>
+    </body>
